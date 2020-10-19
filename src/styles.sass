@@ -11,6 +11,10 @@ $primaryBodyColor: black
 %onlick-popup
   display: none
 
+$breakpoint-tablet: 768px
+$breakpoint-phone: 650px
+
+
 body
   background-color: $backgroundColor
   color: $primaryBodyColor
@@ -160,3 +164,35 @@ h3
 
 .card-align
   margin: auto
+
+.project-img 
+  height: 150px
+  width: auto
+  display: flex
+  align-self: center
+  @media (min-width: $breakpoint-phone)
+    height: 300px
+  @media (min-width: $breakpoint-tablet)
+    width: auto
+
+.container-projects
+  margin-left: 20px
+  margin-right: 20px
+
+%make-a-col
+  display: flex
+  flex-direction: column
+  justify-content: end
+
+.col
+  @extend %make-a-col
+  @media (min-width: $breakpoint-phone)
+    display: flex
+    flex-direction: column
+    justify-content: end
+
+.text-project
+  text-align: center
+  margin-top: 20px
+  @media (min-width: $breakpoint-phone)
+    margin-top: 0px

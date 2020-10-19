@@ -96,7 +96,7 @@ export default class App extends React.Component {
                 <li>HackeRank: JavaScript'20</li>
                 <li>HackeRank: Problem Solving'20</li>
                 <li>St. John's University: Certification of Excellence'19</li>
-                <li>St. John's University: ertification of Professional Development</li>
+                <li>St. John's University: Certification of Professional Development'19</li>
                 <li>ICSB: Global Certificate Program, Creativity and Innovation'18</li>
                 <li>National Institute of Health: Protecting Human Research Participants'17</li>
               </ul>
