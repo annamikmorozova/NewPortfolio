@@ -5,6 +5,12 @@ $primaryFont: Helvetica, sans-serif
 $backgroundColor: #F2F2F2
 $primaryBodyColor: black
 
+%align-text-center
+  text-align: center
+
+%onlick-popup
+  display: none
+
 body
   background-color: $backgroundColor
   color: $primaryBodyColor
@@ -18,7 +24,7 @@ body
   background-color: $mainColor
   box-shadow: 2px 5px 5px 0 rgba(0,0,0,.12)
   text-align: center
-  
+
 .menubar span
   display: inline-block
   position: absolute
@@ -110,3 +116,47 @@ li a
 @media screen and (max-width: 420px)
   .menubar span
     font-size: 1.2em
+
+h1
+  @extend %align-text-center
+
+h2
+  @extend %align-text-center
+
+h3
+  @extend %align-text-center
+
+.bio
+  margin-right: 20px
+  margin-left: 20px
+
+.img-me
+  max-height: 300px
+
+.me-div
+  display: flex
+  justify-content: center
+
+#education
+  @extend %onlick-popup
+
+#skills
+  @extend %onlick-popup
+
+#cert
+  @extend %onlick-popup
+
+.buttons
+  display: flex
+  justify-content: center
+  margin-top: 20px
+
+.btn-style
+  background-color: $mainColor
+  margin: 10px
+
+.card-style
+  background-color: $backgroundColor
+
+.card-align
+  margin: auto

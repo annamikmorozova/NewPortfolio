@@ -7,23 +7,23 @@ export default class Navbar extends React.Component {
       this.state = {
         links: [{
           text: 'About me',
-          link: '#',
+          link: '/',
           icon: 'fa-pencil-square-o'
         }, {
           text: 'Projects',
-          link: '#',
+          link: '/projects',
           icon: '#'
         }, {
           text: 'Publications',
-          link: '#',
+          link: '/publications',
           icon: '#'
         }, {
           text: 'Thesis',
-          link: '#',
+          link: '/thesis',
           icon: '#'
         }, {
           text: 'Events mgt',
-          link: '#',
+          link: '/events',
           icon: '#'
         }, {
           text: 'Github page',
@@ -31,13 +31,13 @@ export default class Navbar extends React.Component {
           icon: 'fa-github'
         }, {
           text: 'Contact me',
-          link: '#',
+          link: '/contact',
           icon: '#'
         }]
       }
     }
     render() {
-      let links = this.state.links.map((link, i) => <li ref={i + 1}><i aria-hidden="true" className={`fa ${ link.icon }`}></i><a href={link.link} rel="noopener noreferrer" target="_blank">{link.text}</a></li>);
+      let links = this.state.links.map((link, i) => <li ref={i + 1}><i aria-hidden="true" className={`fa ${ link.icon }`}></i><a href={link.link}>{link.text}</a></li>);
   
       return (
           <div className={this.props.menuStatus} id='menu'>
