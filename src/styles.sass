@@ -7,6 +7,7 @@ $primaryBodyColor: black
 
 %align-text-center
   text-align: center
+  margin-top: 20px
 
 %onlick-popup
   display: none
@@ -175,9 +176,18 @@ h3
   @media (min-width: $breakpoint-tablet)
     width: auto
 
-.container-projects
+%container
   margin-left: 20px
   margin-right: 20px
+
+.container-projects
+  @extend %container
+
+.thesis
+  @extend %container
+  @media (min-width: $breakpoint-phone)
+    margin-left: 100px
+    margin-right: 100px
 
 %make-a-col
   display: flex
@@ -215,3 +225,25 @@ h3
 .arrow-left:hover
   background-color: $mainColor
   border: black
+
+h5
+  color: #999
+  border-bottom: 1px solid lightgrey
+  padding-bottom: 5px
+
+.thesis-italica
+  font-style: oblique
+  margin-bottom: 20px
+  margin-top: 20px
+
+.created-by
+  text-align: center
+  margin-top: 40px
+
+.github
+  text-align: center
+  margin-bottom: 40px
+
+.g-link:hover
+  color: $mainColor
+  

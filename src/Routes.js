@@ -7,6 +7,7 @@ import Publications from "./Publications";
 import Thesis from "./Thesis";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export default class Routes extends Component {
 
@@ -22,6 +23,7 @@ export default class Routes extends Component {
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/" component={App} />
 				</Switch>
+				<Footer />
 			</div>
 		);
 	}

@@ -29,22 +29,22 @@ export default class Publications extends React.Component {
                     alt: "Spashion"
                 }
             ]
-        }
+        };
         this.handleNext = this.handleNext.bind(this);
         this.handlePrev = this.handlePrev.bind(this);
-    }
+    };
 
     handlePrev() {
         this.setState({
             order: this.state.order - 1
-        })
-    }
+        });
+    };
 
     handleNext() {
         this.setState({
             order: this.state.order + 1
-        })
-    }
+        });
+    };
 
     render() {
     
@@ -61,6 +61,6 @@ export default class Publications extends React.Component {
                     <img className="publication-img" src={this.state.articles[this.state.order].url} alt={this.state.articles[0].alt}/>
                 </div>
             </div>
-        )
+        );
     }
-}
+};
